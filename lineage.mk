@@ -14,6 +14,6 @@ PRODUCT_LOCALES := en_US en_AU en_IN fr_FR it_IT es_ES et_EE de_DE nl_NL cs_CZ p
 PRODUCT_DEVICE := etab5
 PRODUCT_NAME := lineage_etab5
 PRODUCT_BRAND := etab5
-PRODUCT_MODEL := ETAB5
+PRODUCT_MODEL := etab5
 PRODUCT_MANUFACTURER := General Mobile
 

@@ -65,8 +65,9 @@ BOARD_CACHEIMAGE_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Flags
-TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+#TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
+#TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+# soong already does this? dunno
 
 TARGET_KMODULES := true
 
@@ -80,6 +81,7 @@ BOARD_KERNEL_CMDLINE += \
 	
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_IMAGE_NAME = kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 BOARD_CUSTOM_MKBOOTIMG := mtkbootimg
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/bootimg.mk
