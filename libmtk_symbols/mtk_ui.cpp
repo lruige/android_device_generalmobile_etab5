@@ -3,6 +3,7 @@
 #include <ui/Rect.h>
 #include <log/log.h>
 #include <dlfcn.h>
+#include <string>
 
 #define LOG_TAG "DECKER_SHIM"
 
